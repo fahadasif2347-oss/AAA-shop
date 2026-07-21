@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Management System</title>
+    <link rel="stylesheet" href="stat.css">
+    <link rel="stylesheet" href="stock.html">
+</head>
+<body>
+
+
+
+<h1>🧾AAA shop & Billing System</h1>
+
+<nav>
+<lu><a href="stock.html"> Add Stock & Stock Check </a></li>
+<li><a href="Bill .html"> Generte Bill </a></li>
+<li><a href="stat.html"> Check Today Sale </a></li>
+</nav>
+
+
+<!-- 
+<div class="log-section">
+        <h2>Sales History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item(s) Sold</th>
+                    <th>Total Price</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody id="salesTable"></tbody>
+             -->
+<div class="box">
+    <h2>📅 Today Sale History</h2>
+    <p><strong>Date:</strong> <span id="todayDate"></span></p>
+    <ul id="dailySalesList"></ul>
+</div>
+
+<script>
+    document.getElementById("todayDate").innerText =
+        new Date().toLocaleDateString();
+</script>
+
+
+<button onclick="printReport()">🖨 Print Report</button>
+</div>
+
+    <button class="btn-clear" onclick="clearAllData()">Reset All Data</button>
+</div>
+
+
+<script src="stat.js"></script>
+</body>
+</html>

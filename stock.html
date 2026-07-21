@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stat.css">
+    <link rel="stylesheet" href="bill.css">
+    <link rel="stylesheet" href="stock.html">
+    <link rel="stylesheet" href="stat.html">
+</head>
+<body>
+<h1>🧾AAA shop & Billing System</h1>
+<nav>
+<lu><a href="stock.html"> Add stock & Stock Check </a></li>
+<li><a href="Bill .html"> Generte Bill </a></li>
+<li><a href="stat.html"> Check Today Sale </a></li>
+</nav>
+<div class="box">
+    <h2>Add Stock Item</h2> 
+ <input id="itemName" placeholder="Item Name">   
+   <input id="itemPrice" type="number" placeholder="Price"> <br> 
+ <pre>           <input id="itemQty" type="number" placeholder="Quantity">     </pre>
+<pre>            <button onclick="addItem()">Add Item</button>       </pre> 
+</div>
+
+
+<div class="box">
+
+    <h2 >📦 Stock</h2>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
+        </tr>
+        <tbody id="stockTable"></tbody>
+    </table>
+</div>
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>Medicine</th>
+
+            <th>Price</th>
+
+            <th>Stock</th>
+
+            <th>Action</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="stockTable">
+
+    </tbody>
+
+</table>
+
+    <script src="stat.js"></script>
+</body>
+</html>
